@@ -57,25 +57,43 @@ This project uses Machine Learning to automatically classify celestial objects b
 ---
 
 ## 📂 Project Structure
-- app.py - Web app 
-- Model. pkl - Trained Model 
-- Notebook/- Analysis
-- Images/- visualization
+- app.py # Web app
+- requirements.txt # Dependencies
+- week1_star_data.ipynb # Model training
+- image.png # Visualization
+---
 
 ---
 
+## 🧠 My Approach
+- Focused on feature importance
+- Used ensemble learning (Random Forest)
+- Balanced accuracy with interpretability
 
 ---
 
-## 👨‍💻 Author
-
-**Abhishek Pandey**  
-Aspiring Astrophysicist 🚀  
+## ⚠️ Limitations
+- Limited to the SDSS dataset
+- The model may struggle with unseen data distributions
 
 ---
 
-## 🌟 Future Work
+## 🔮 Future Improvements
+- Use Deep Learning models (CNN / LSTM)
+- Train on real-time telescope data
+- Improve classification of quasars
 
-- Deep Learning models  
-- Better QSO classification  
-- Larger datasets  
+---
+
+## 📜 Research Paper
+👉 Available in this repository (PDF)
+
+---
+
+## 🙋 About Me
+I am a Class 12 student passionate about Astronomy and Machine Learning,  
+building projects at the intersection of space science and AI.
+
+---
+
+⭐ If you found this interesting, consider giving it a star!

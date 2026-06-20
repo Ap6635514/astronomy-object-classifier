@@ -78,13 +78,6 @@ This project uses Machine Learning to automatically classify celestial objects b
 
 ---
 
-## 🔮 Future Improvements
-- Use Deep Learning models (CNN / LSTM)
-- Train on real-time telescope data
-- Improve classification of quasars
-
----
-
 ## 📜 Research Paper
 👉 Available in this repository (PDF)
 

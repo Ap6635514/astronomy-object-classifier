@@ -1,13 +1,17 @@
+from pathlib import Path
+
 import gradio as gr
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
+DATA_FILE = Path(__file__).resolve().parent / "data" / "star_classification.csv"
+
 # ✅ Load + train model ONCE (cached)
 def load_model():
     try:
-        df = pd.read_csv("star_classification.csv")
+        df = pd.read_csv(DATA_FILE)
     except FileNotFoundError:
-        raise FileNotFoundError("Dataset file 'star_classification.csv' not found. Please ensure it exists in the root directory.")
+        raise FileNotFoundError(f"Dataset file '{DATA_FILE}' not found. Please ensure it exists in the repository.")
 
     # Clean
     df = df[(df["u"] > 0) & (df["u"] < 30)]

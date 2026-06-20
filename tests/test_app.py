@@ -21,7 +21,8 @@ def test_load_model_missing_file():
     with pytest.raises(FileNotFoundError) as excinfo:
         app.load_model()
 
-    assert "Dataset file 'star_classification.csv' not found" in str(excinfo.value)
+    assert "Dataset file" in str(excinfo.value)
+    assert "star_classification.csv" in str(excinfo.value)
 
 def test_predict_logic():
     # Mock the model object

@@ -32,10 +32,10 @@ This project uses Machine Learning to automatically classify celestial objects b
 ## 📈 Visualizations
 
 ### Confusion Matrix
-![Confusion matrix](image.png)
+![Confusion matrix](assets/images/image.png)
 
 ### Feature Importance
-![Feature Importance](image-1.png)
+![Feature Importance](assets/images/image-1.png)
 
 ---
 
@@ -57,10 +57,15 @@ This project uses Machine Learning to automatically classify celestial objects b
 ---
 
 ## 📂 Project Structure
-- app.py # Web app
-- requirements.txt # Dependencies
-- week1_star_data.ipynb # Model training
-- image.png # Visualization
+- `app.py` # Web app
+- `save_model.py` # Model training script
+- `requirements.txt` # Dependencies
+- `data/star_classification.csv` # Dataset
+- `notebooks/week1_star_data.ipynb` # Notebook
+- `assets/images/image.png` # Confusion matrix
+- `assets/images/image-1.png` # Feature importance
+- `docs/report.pdf` # PDF report
+- `tests/` # Unit tests
 ---
 
 ---

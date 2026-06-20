@@ -1,9 +1,15 @@
+from pathlib import Path
+
+import joblib
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-import joblib
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_FILE = BASE_DIR / "data" / "star_classification.csv"
+MODEL_FILE = BASE_DIR / "model.pkl"
 
 # Load data
-df = pd.read_csv("star_classification.csv")
+df = pd.read_csv(DATA_FILE)
 
 # Clean
 df = df[(df["u"] > 0) & (df["u"] < 30)]
@@ -27,6 +33,6 @@ model = RandomForestClassifier()
 model.fit(X, y)
 
 # Save
-joblib.dump(model, "model.pkl")
+joblib.dump(model, MODEL_FILE)
 
 print("Model saved ✅")
